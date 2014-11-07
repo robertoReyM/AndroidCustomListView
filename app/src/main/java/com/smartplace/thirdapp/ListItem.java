@@ -3,9 +3,18 @@ package com.smartplace.thirdapp;
 import android.graphics.drawable.Drawable;
 
 /**
+ * Class used to contain the information of each row element.
+ *
  * Created by Roberto on 07/11/2014.
  */
 public class ListItem {
+
+    //Attributes for a list item
+    private String header;
+    private String subHeader;
+    private Drawable imageUser;
+
+    //Get and set methods for each attribute
 
     public String getHeader() {
         return header;
@@ -23,9 +32,6 @@ public class ListItem {
         this.subHeader = subHeader;
     }
 
-    private String header;
-    private String subHeader;
-
     public Drawable getImageUser() {
         return imageUser;
     }
@@ -34,6 +40,6 @@ public class ListItem {
         this.imageUser = imageUser;
     }
 
-    private Drawable imageUser;
+
 
 }

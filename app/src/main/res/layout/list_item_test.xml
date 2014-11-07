@@ -1,36 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+Linear layout with horizontal orientation and wrapping content
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
+    <!--
+    Linear layout with vertical orientation and filling the whole space
+    gravity center to center the image and weight 2 to give a third part
+    of the screen as space
+      -->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="2"
         android:gravity="center">
-
+        <!--
+        ImageView with custom width and heigth
+          -->
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:id="@+id/image_user"
             android:src="@drawable/image_user" />
     </LinearLayout>
-
+    <!--
+    Linear layout with vertical orientation and filling the whole space
+    gravity center_vertical to center texts vertically and weight 1 to
+    give two/third parts of the screen as space
+      -->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:gravity="center_vertical"
         android:layout_weight="1">
-
+        <!--
+        TextView containing the header and appearance large
+          -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Large Text"
             android:id="@+id/txt_header" />
-
+        <!--
+        TextView containing the sub-header and appearance small
+          -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
